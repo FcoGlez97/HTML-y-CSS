@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html>
+    <!Cabecera de la página>
     <head>
         <meta charset="utf-8"/>
-        <title> Página Francisco</title>
+        <title> Sitio Web con CSS</title>
+        <link rel="stylesheet" href="styles.css"
     </head>
+    <!Cuerpo de la página>
     <body>
-        <h1>Encabezado de esta página</h1>
-        <h2>Encabezado de esta página</h2>
-        <h3>Encabezado de esta página</h3>
-        <h4>Encabezado de esta página</h4>
-        <h5>Encabezado de esta página</h5>
+        <div id="container">
+            <header>
+                <h1>Aprendiendo CSS por primera vez</h1>
+            </header>
 
-        <p>
-            Este es el texto de un párrafo que se me acaba de ocurrir
-        </p>
-        <p>
-            Este es el texto de un párrafo que se me acaba de ocurrir
-        </p>
-        <p>
-            Este es el texto de un párrafo que se me acaba de ocurrir
-        </p>
+            <nav><!Despliega una lista de selección>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                        Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><!Gato para referencia vacia>
+                        Galería
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><!Gato para referencia vacia>
+                        Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><!Gato para referencia vacia>
+                        Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+<div class="clearfix"></div>
+
+            <section id="content"><!Sección tipo posteo o blog>
+                <article class="article">
+                    <h2>Título del artículo</h2><!Título>
+                    <p>Texto del artículo</p><!Parrafo>
+                </article>
+                <article class="article">
+                    <h2>Título del artículo</h2><!Título>
+                    <p>Texto del artículo</p><!Parrafo>
+                </article>
+                <article class="article">
+                    <h2>Título del artículo</h2><!Título>
+                    <p>Texto del artículo</p><!Parrafo>
+                </article>
+            </section>
+
+            <aside><!Barra lateral>
+                <h2>Búsqueda</h2>
+                <form>
+                    <input type="text"><!Acepta teclear busqueda>
+                        <input type="submit" value="Buscar">
+                </form>
+            </aside>
+            <div class="clearfix"></div>
+
+            <footer><!Pie de la bsuqueda>
+                Made with love by Francisco
+            </footer>
         
-        <h1> Lista de colores </h1>
-        <ul>
-            <li>Rojo</li>
-            <li>Verde</li>
-            <li>Azul</li>
-        </ul>
-
-        <h1>Lista de nombres</h1>
-        <ol>
-            <li>Alejandra</li>
-            <li>Luis</li>
-            <li>Carmen</li>
-        </ol>
-
-        <hr/>
-
-        <h1> Imágenes </h1>
-        <img width="100px" alt="El Jefe Maestro" src="https://pbs.twimg.com/media/EkYNldcXsAYO_Vk.jpg"/>
-        
-        <h1> Tabla </h1>
-        <table>
-            <tr>
-                <td>1a</td>
-                <td>1b</td>
-                <td>1c</td>
-                <td>1d</td>
-            </tr>
-            <tr>
-                <td>2a</td>
-                <td>2b</td>
-                <td>2c</td>
-                <td>2d</td>
-            </tr>
-        </table>
+        </div>
     </body>
 </html>

@@ -1,0 +1,86 @@
+{ /*Esta parte es para que todo tenga el mismo margin y padding*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body /*Cambio de fondo y fuente*/
+{
+    background: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{ /*Agrega un formato a lo que está en el HTML que fue llamado container*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header{ /*Alineación del titulo*/
+    background: rgb(75, 82, 172);
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px;
+}
+
+nav ul li{ /*Formato a la lista*/
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{ /*Acomodo de texto de espacio*/
+    clear: both;
+}
+
+nav{/*Se le asigna formato al apartado nav*/
+    background:  rgb(136, 141, 214);
+    height: 50px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#content{/*Se ajusta el contenido al formato*/
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background: rgb(170, 175, 240);
+    padding: 40px;
+}
+
+aside{/*Se agrega formato a la barra lateral*/
+    float: left;
+    width: calc(20% - 20px);
+    background:  rgb(124, 127, 158);
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+footer{/*Formato a pie de página*/
+    background:  rgb(51, 60, 189);
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.article{/*Formato a todos los artículos*/
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.article:first-child{/*Formato diferente al primer articulo*/
+    border-top: 1px solid white;
+}
+
+.article h2{
+    font-size: 25px;
+}
